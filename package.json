@@ -11,7 +11,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "deploy-storybook": "storybook-to-ghpages",
-    "storybook:publish": "npm run storybook:build && touch ./storybook-static/.nojekyll && gh-pages -d ./storybook-static -t true"
+    "storybook:publish": "npm run build-storybook && touch ./storybook-static/.nojekyll && gh-pages -d ./storybook-static -t true"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.0.4",
